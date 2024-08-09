@@ -4,8 +4,8 @@ import './post.css';
 import Cookies from 'js-cookie';
 
 
-function CreatePost(){
-    const [user_id, setUserId] = useState('');
+function CreatePost(props){
+    const [user_id, setUserId] = useState(props.user_id);
     const [content, setContent] = useState('');
     const [image, setImage] = useState('');
 
